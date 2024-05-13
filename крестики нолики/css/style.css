@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    color: #316ed6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 56px;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+    background-color: gray;
+}
+
+.cell {
+    /* border: 3px solid #504b4b; */
+    background-color: rgb(189, 188, 188);
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#message {
+    text-align: center;
+    font-size: 34px;
+}
+
+.cell[data-value='X'] {
+    color: #720ec9;
+}
+
+.cell[data-value='O'] {
+    color: #316ed6;
+}
